@@ -337,16 +337,6 @@ namespace ts {
             }
         },
         {
-            name: "typesSearchPaths",
-            type: "list",
-            isTSConfigOnly: true,
-            element: {
-                name: "typesSearchPaths",
-                type: "string",
-                isFilePath: true
-            }
-        },
-        {
             name: "typeRoots",
             type: "list",
             element: {
@@ -383,6 +373,11 @@ namespace ts {
             name: "noImplicitUseStrict",
             type: "boolean",
             description: Diagnostics.Do_not_emit_use_strict_directives_in_module_output
+        },
+        {
+            name: "maxNodeModuleJsDepth",
+            type: "number",
+            description: Diagnostics.The_maximum_dependency_depth_to_search_under_node_modules_and_load_JavaScript_files
         },
         {
             name: "listEmittedFiles",
